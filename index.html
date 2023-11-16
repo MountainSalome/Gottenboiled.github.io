@@ -5,7 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="profile" href="https://gmpg.org/xfn/11"> 
 	 <title>Blog-site</title>
-<meta name="robots" content="max-image-preview:large">
+
+	 <style>
+		body {
+		  margin: 0;
+		  font-family: Arial, sans-serif;
+		}
+	
+		.sidebar {
+		  position: fixed;
+		  left: 0;
+		  top: 50%;
+		  transform: translateY(-50%);
+		  background-color: #f1f1f1;
+		  padding: 15px;
+		  display: flex;
+		  flex-direction: column;
+		}
+	
+		.sidebar a {
+		  margin-bottom: 10px;
+		}
+	    .sidebar a {
+      margin-bottom: 10px;
+      max-width: 150px; /* Maksimum genişlik belirleniyor */
+    }
+
+    .sidebar img {
+      max-width: 100%; /* Logoların maksimum genişliği ekran genişliğine göre ayarlanıyor */
+      max-height: 50px; /* Maksimum yükseklik belirleniyor */
+      height: auto; /* Oranları korumak için */
+    }
+
+		.content {
+		  margin-left: 200px; /* Sidebar genişliği */
+		  padding: 16px;
+		}
+	  </style>
+	</head>
+	<body>
+	
+	  <div class="sidebar">
+		<a href="#" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+		<a href="#" target="_blank"><img src="youtube-logo.png" alt="YouTube"></a>
+		<a href="#" target="_blank"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+	  </div>
+	
+	  <div class="content">
+		<!-- Blog içeriği buraya eklenecek -->
+	  </div>
+	
+	  <script src="script.js"></script>
+	 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Blog-site &raquo; beslemesi" href="./feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="Blog-site &raquo; yorum beslemesi" href="./comments/feed/index.html">
@@ -487,5 +538,16 @@ flexibility(document.documentElement);
 <script id="wpforms-elementor-js-extra">var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};</script>
 <script src="./wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.4.1" id="wpforms-elementor-js"></script>
 			<script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script>
+			<div class="sidebar">
+				<a href="https://www.instagram.com/" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+				<a href="https://www.youtube.com/" target="_blank"><img src="youtube-logo.png" alt="YouTube"></a>
+				<a href="https://www.linkedin.com/" target="_blank"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+			  </div>
+			
+			  <div class="content">
+				<!-- Blog içeriği buraya eklenecek -->
+			  </div>
+			
+			  <script src="script.js"></script>
 				</body>
 </html>
